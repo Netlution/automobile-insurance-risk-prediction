@@ -18,11 +18,9 @@ columns = [
 
 with st.expander("See explanation"):
     # Load dataset with headers
-    df = pd.read_csv(
-        r"C:\Users\user\Downloads\AutombileC\imports-85.data", 
-        header=None, 
-        names=columns
-    )
+    url = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
+    df = pd.read_csv(url, header=None, names=columns)
+
 
     df.index = df.index + 1
 
