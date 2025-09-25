@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from style import set_black_background
+# from style import set_black_background
 
-set_black_background()
+# set_black_background()
+
+st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
 
 # ✅ Custom CSS for dropdowns, sliders, and buttons
 st.markdown("""
@@ -17,7 +19,7 @@ st.markdown("""
 
     /* Selected text inside dropdown */
     div[data-baseweb="select"] span {
-        color: white !important; /* Ensure selected text is white */
+        color: white !important; 
         font-weight: bold;
     }
 
@@ -28,7 +30,7 @@ st.markdown("""
 
     /* Dropdown menu (when opened) */
     ul[role="listbox"] {
-        background-color: #001f3f !important; /* Deep blue */
+        background-color: #001f3f !important; 
         color: white !important;
     }
 
@@ -40,7 +42,7 @@ st.markdown("""
 
     /* Hover effect for dropdown options */
     ul[role="listbox"] li:hover {
-        background-color: #004080 !important; /* Lighter blue */
+        background-color: #004080 !important; 
         color: white !important;
     }
 
@@ -74,8 +76,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
-
+# ---------------------------
+# 🚘 App Title & Description
+# ---------------------------
 st.title("🚘 Automobile Insurance Risk Prediction App")
 st.write("This app predicts the **insurance risk rating (symboling)** of a car based on its features.")
 

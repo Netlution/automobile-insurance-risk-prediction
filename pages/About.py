@@ -1,7 +1,7 @@
 import streamlit as st
-from style import set_black_background
+# from style import set_black_background
 
-set_black_background()
+# set_black_background()
 
 st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
 

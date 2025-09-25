@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import statsmodels.api as sm
-from style import set_black_background
+# from style import set_black_background
  
-set_black_background()
+# set_black_background()
 
 
 st.title("📊 The Visualization Charts")

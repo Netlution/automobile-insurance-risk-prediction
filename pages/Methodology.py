@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from style import set_black_background
+# from style import set_black_background
 
-set_black_background()
+# set_black_background()
 
 
 st.title("📂 Data Preparation")
