@@ -32,6 +32,28 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# ✅ Add your custom CSS here
+st.markdown("""
+    <style>
+    /* Style for Streamlit button */
+    div.stButton > button:first-child {
+        background-color: #001f3f; /* Deep blue */
+        color: white;              /* White text */
+        border-radius: 8px;        /* Rounded corners */
+        height: 3em;
+        width: 100%;
+        border: none;
+        font-weight: bold;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #004080; /* Lighter deep blue on hover */
+        color: white;
+        border: none;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
 
 st.title("🚘 Automobile Insurance Risk Prediction App")
