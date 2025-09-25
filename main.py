@@ -5,22 +5,48 @@ from style import set_black_background
 
 set_black_background()
 
-# Add this after set_black_background()
+# ✅ Custom CSS for dropdowns, sliders, and buttons
 st.markdown("""
     <style>
-    /* Dropdown (selectbox) */
+    /* Dropdown (selectbox) main box */
     div[data-baseweb="select"] > div {
         background-color: #001f3f !important; /* Deep blue background */
-        color: white !important; /* Text color */
+        color: white !important;              /* White text */
         border-radius: 8px;
     }
+
+    /* Selected text inside dropdown */
+    div[data-baseweb="select"] span {
+        color: white !important; /* Ensure selected text is white */
+        font-weight: bold;
+    }
+
+    /* Dropdown arrow */
     div[data-baseweb="select"] svg {
-        fill: white !important; /* Dropdown arrow */
+        fill: white !important;
+    }
+
+    /* Dropdown menu (when opened) */
+    ul[role="listbox"] {
+        background-color: #001f3f !important; /* Deep blue */
+        color: white !important;
+    }
+
+    /* Dropdown options text */
+    ul[role="listbox"] li {
+        color: white !important; 
+        font-weight: normal;
+    }
+
+    /* Hover effect for dropdown options */
+    ul[role="listbox"] li:hover {
+        background-color: #004080 !important; /* Lighter blue */
+        color: white !important;
     }
 
     /* Slider track */
     .stSlider > div[data-baseweb="slider"] > div > div {
-        background: #001f3f !important; /* Deep blue for track */
+        background: #001f3f !important; 
     }
 
     /* Slider thumb (circle) */
@@ -28,25 +54,19 @@ st.markdown("""
         background-color: #001f3f !important;
         border: 2px solid white !important;
     }
-    </style>
-""", unsafe_allow_html=True)
 
-
-# ✅ Add your custom CSS here
-st.markdown("""
-    <style>
     /* Style for Streamlit button */
     div.stButton > button:first-child {
-        background-color: #001f3f; /* Deep blue */
-        color: white;              /* White text */
-        border-radius: 8px;        /* Rounded corners */
+        background-color: #001f3f; 
+        color: white;              
+        border-radius: 8px;        
         height: 3em;
         width: 100%;
         border: none;
         font-weight: bold;
     }
     div.stButton > button:first-child:hover {
-        background-color: #004080; /* Lighter deep blue on hover */
+        background-color: #004080; 
         color: white;
         border: none;
     }
