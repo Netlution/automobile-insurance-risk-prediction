@@ -3,6 +3,7 @@ from style import set_black_background
 
 set_black_background()
 
+st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
 
 st.title("🚗 About the Project – Automobile Insurance Risk Prediction")
 

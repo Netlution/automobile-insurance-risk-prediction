@@ -7,6 +7,9 @@ set_black_background()
 
 st.title("📂 Data Preparation")
 
+st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
+
+
 # Define column names
 columns = [ 
     "symboling", "normalized_losses", "make", "fuel_type", "aspiration",

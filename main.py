@@ -5,6 +5,33 @@ from style import set_black_background
 
 set_black_background()
 
+# Add this after set_black_background()
+st.markdown("""
+    <style>
+    /* Dropdown (selectbox) */
+    div[data-baseweb="select"] > div {
+        background-color: #001f3f !important; /* Deep blue background */
+        color: white !important; /* Text color */
+        border-radius: 8px;
+    }
+    div[data-baseweb="select"] svg {
+        fill: white !important; /* Dropdown arrow */
+    }
+
+    /* Slider track */
+    .stSlider > div[data-baseweb="slider"] > div > div {
+        background: #001f3f !important; /* Deep blue for track */
+    }
+
+    /* Slider thumb (circle) */
+    .stSlider > div[data-baseweb="slider"] > div > div > div {
+        background-color: #001f3f !important;
+        border: 2px solid white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="Automobile Insurance Risk Prediction App", layout="wide")
 
 st.title("🚘 Automobile Insurance Risk Prediction App")
